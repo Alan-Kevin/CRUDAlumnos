@@ -1,0 +1,12 @@
+services:
+  app-alumnos:
+    build: .
+    container_name: app-alumnos
+    ports:
+      - "8002:8002"
+    networks:
+      - oracle-network
+
+networks:
+  oracle-network:
+    external: true
